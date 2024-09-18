@@ -1,0 +1,554 @@
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilidades  */
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+}
+/* le agregue color a la pagina desde el body */
+body{
+    background-color: #612B11;
+   ;
+}
+
+/* estilo desde el header  */
+header{
+    text-align: center;
+    text-decoration: none;
+    background-color:#612B11 ;
+
+}
+
+
+/* barra de naveacion */
+.marron-bg{
+    background-color: #612B11;
+}
+/* logo templo */
+.logo{
+    height: 130px;
+    width: 140px;
+}
+
+.lm-auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 40px;
+}
+   
+.lm-item{
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+
+
+/* banner principal del index */
+main{
+    color: #000;
+    text-align: center;
+}
+.banner {
+	background-image: linear-gradient(100deg, #000000, #00000020),
+		url('../img/banner.jpeg');
+	height: 60rem;
+	background-size: cover;
+	background-position: center;
+}
+
+.content-banner {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 20rem 0;
+}
+
+.content-banner p {
+	color: whitesmoke;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.content-banner a {
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--primary-color);
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+}
+
+.main-content {
+	background-color: var(--background-color);
+}
+/* categorias de productos del index */
+.top-categorias {
+	display: flex;
+	flex-direction: column;
+    align-content: flex-start;
+	gap: 1rem;
+	margin-bottom: 3rem;
+    
+}
+.container-categorias {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+    align-content: center;
+
+}
+.card-categoria {
+	height: 20rem;
+    width:16rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.categoria-cafe {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../img/Latte\ Art.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.categoria-reposteria{
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../img/IMG_5026.PNG');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.categoria-salados {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../img/IMG_5027.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-categoria p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-categoria p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-categoria span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-categoria span:hover {
+	color:black;
+}
+/* galeria de fotos en html */
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 30rem);
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.galeria img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.galeria-img-3 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+}
+
+/* contenido de menu  */
+
+.menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}   
+.cafeteria{
+    color: whitesmoke;
+    margin-bottom: 30px;
+    padding: 30px 0px;
+    grid: column 1px / -1px; ;
+    text-align: center;
+}
+
+main h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}   
+main h3 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: repeat(3 1fr);
+    border-radius: 15px;
+}
+.food-items img{
+   position: relative; 
+   width: 80%;
+   height: 80%;
+   border-radius: 15px 15px 0 0 ;
+   box-shadow:0 0 15px rgb(0, 0, 0, 1) ;
+}
+
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.deleitate{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 500px;
+    grid-row-gap: 15px;
+}
+
+.deleitate-1{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.deleitate-1 h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.precio{
+    text-align: right;
+}
+
+.deleitate p{
+    color: #000;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+    align-self: self-end;
+}
+
+/* contenido principal de Libros */
+.productos-libros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+
+}
+
+.productos-1{
+    background-color: #fff;
+}
+.prodcto-txt{
+    padding: 50px 30px;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.costo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.costo p{
+    font-size: 17px;
+    color:black;
+}
+
+.btn-2{
+    text-decoration: none;
+    padding: 5px 25px;
+    background-color:rgb(72, 10, 10) ;
+    color: #000;
+   
+    
+}
+/* contenido de talleres */
+.taller{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.talleres{
+    width: 100%;
+    display: flex;
+    
+    
+}
+
+.tarjetas{
+    width: 100%;
+    margin: 20px;
+    border-radius:6px;
+    background-color: #612B11;
+    box-shadow:  0px 1px 10px rgba(0, 0, 0, 2);
+    cursor:default ;
+    transition:  all 400ms ease ;
+}
+
+.tarjetas:hover{
+    box-shadow: 5px 5px 20px rgb(0, 0, 4 ) ;
+}
+
+.im{
+    height: 130px;
+    width: 130px;
+}
+
+.tarjetas .contenido{
+    padding:15px ;
+    text-align: center;
+
+}
+.tarjetas .contenido p{
+    text-align: center;
+    font-size: 30pxpx;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tarjetas .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 4px;
+}   
+
+.tarjetas .contenido a:hover{
+  background: rgb(106, 4, 4) ;
+  color: fff;
+
+}
+
+/* formulario de contactos */
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info  h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data  p {
+    font-size: 1rem;
+}
+
+.data  p  i {
+    color:rgba(11, 1, 1, 0.84);
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid rgb(220, 20, 20);
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: rgb(238, 43, 9);
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+}
+
+/* footer */
+footer{
+    color: #000;
+    font-size: 20px;
+    display: contents;
+    text-align: center;
+   
+    
+}
+
+/* media quary de contactos  */
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+/* estilos para tablet */
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .food{
+        padding: 30px;
+    }
+
+    .food-content{
+        padding: 0;
+        flex-direction: column;
+
+    }
+
+    .food-1{
+        margin: 0;
+    }
+
+}
